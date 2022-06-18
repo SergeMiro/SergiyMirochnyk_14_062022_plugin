@@ -1,3 +1,13 @@
-import { Modal } from './components/Modal';
+"use strict";
 
-export { Modal };
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+Object.defineProperty(exports, "Modal", {
+  enumerable: true,
+  get: function get() {
+    return _Modal.Modal;
+  }
+});
+
+var _Modal = require("./components/Modal");
