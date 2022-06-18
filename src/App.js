@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import { Modal } from '../lib/components/Modal';
+import done from '../lib/components/assets/hrnet-logo.jpeg';
 
-function App() {
+export const App = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <h1 style={{ textAlign: 'center' }}>Background</h1>
+      <Modal
+        show={modalIsOpen}
+        setShow={setModalIsOpen}
+        title="Success !"
+        text="The new employee has been created"
+        image={done}
+      />
+    </>
   );
-}
-
-export default App;
+};
