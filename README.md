@@ -1,18 +1,52 @@
-# Getting Started with Create React App
+# P14-plugin-sergiy-mirochnyk
 
-# p14-plugin-mirochnyk-sergiy
+P14-plugin-sergiy-mirochnyk is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
 
-A library of React components created using `create-react-app`.
+# Installation
 
-## Link npm
+Install P14-plugin-sergiy-mirochnyk with npm
+````javascript
+npm install p14-plugin-sergiy-mirochnyk
+````
+# Example
+````javascript
+import React, { useState } from 'react'
+import { Modal } from 'p14-plugin-sergiy-mirochnyk'
 
-https://www.npmjs.com/package/p14-plugin-mirochnyk-sergiy
+export const App = () => {
+  const [modalIsOpen, setModalIsOpen] = useState(true);
 
-## Installation
+  return (
+    <>
+      <h1 style={{ textAlign: 'center' }}>Background</h1>
+      <Modal
+        show={modalIsOpen}
+        setShow={setModalIsOpen}
+        title="Success !"
+        text="The new employee has been created"
+        image={done}
+      />
+    </>
+  );
+};
+````
 
-Run the following command:
-`npm i p14-plugin-mirochnyk-sergiy`
+## Props
 
-## How to import the component in your project
+| Name            | Type          | Required | Description                                                              | Default value     |
+| --------------- | ------------- | -------- | ------------------------------------------------------------------------ | ----------------- |
+| title | `string` | `Required`   | `Modal title`|  `""` |
+| width | `string` | `Optinal`  | `Modal width`|  `""` |
+| onClose | `function` | `Required`   | `on click : close modal`|  |
+| modalContent    | `Required`  | `true`   | Content of the body of the modal                                                     | `{<p></p>}`              |
+| footerContent   | `Optional` | `false`  | buttons to add to the footer        | `{<button></button>}`                                                                       |
+| isOpen        | `number`     | `Required`  | if isOpen=1 the modal is displayed
 
-`import { Modal } from 'p14-plugin-mirochnyk-sergiy'`
+              
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm run test
+``` 
