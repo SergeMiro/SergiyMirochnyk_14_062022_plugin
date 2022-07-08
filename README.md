@@ -2,9 +2,6 @@
 
 p14-plugin-mirochnyk-s is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
 
-# Demo
-
-![alt text](figures/img.png)
 
 # Installation
 
