@@ -1,17 +1,24 @@
-# P14-plugin-sergiy-mirochnyk
+# P14-plugin-mirochnyk-s
 
-P14-plugin-sergiy-mirochnyk is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
+p14-plugin-mirochnyk-s is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
+
+# Demo
+
+![alt text](figures/img.png)
 
 # Installation
 
-Install P14-plugin-sergiy-mirochnyk with npm
-````javascript
-npm install p14-plugin-sergiy-mirochnyk
-````
+Install p14-plugin-mirochnyk-s with npm
+
+```javascript
+npm install p14-plugin-mirochnyk-s
+```
+
 # Example
-````javascript
-import React, { useState } from 'react'
-import { Modal } from 'p14-plugin-sergiy-mirochnyk'
+
+```javascript
+import React, { useState } from 'react';
+import { Modal } from 'p14-plugin-mirochnyk-s';
 
 export const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(true);
@@ -29,24 +36,12 @@ export const App = () => {
     </>
   );
 };
-````
+```
 
-## Props
-
-| Name            | Type          | Required | Description                                                              | Default value     |
-| --------------- | ------------- | -------- | ------------------------------------------------------------------------ | ----------------- |
-| title | `string` | `Required`   | `Modal title`|  `""` |
-| width | `string` | `Optinal`  | `Modal width`|  `""` |
-| onClose | `function` | `Required`   | `on click : close modal`|  |
-| modalContent    | `Required`  | `true`   | Content of the body of the modal                                                     | `{<p></p>}`              |
-| footerContent   | `Optional` | `false`  | buttons to add to the footer        | `{<button></button>}`                                                                       |
-| isOpen        | `number`     | `Required`  | if isOpen=1 the modal is displayed
-
-              
 ## Running Tests
 
 To run tests, run the following command
 
 ```bash
   npm run test
-``` 
+```
