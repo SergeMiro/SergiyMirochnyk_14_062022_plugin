@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from '../lib/components/Modal';
-
+import done from '../lib/components/assets/hrnet-logo.jpeg';
 
 export const App = () => {
   const [modalIsOpen, setModalIsOpen] = useState(true);
@@ -13,6 +13,7 @@ export const App = () => {
         setShow={setModalIsOpen}
         title="Success !"
         text="The new employee has been created"
+        image={done}
       />
     </>
   );
