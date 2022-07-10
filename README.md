@@ -1,14 +1,14 @@
-# ReactModalFzchnyk-s
+# p14-plugin-miro
 
-ReactModalFzchnyk-s is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
+p14-plugin-miro is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
 
 
 # Installation
 
-Install ReactModalFzchnyk-s with npm
+Install p14-plugin-miro with npm
 
 ```javascript
-npm install ReactModalFzchnyk-s
+npm install p14-plugin-miro
 ```
 
 # Example
@@ -16,7 +16,7 @@ npm install ReactModalFzchnyk-s
 ```javascript
 import React, { useState } from 'react'
 import 'ReactModalFz/dist/index.css'
-import { Modal } from 'ReactModalFz'
+import { Modal } from 'p14-plugin-miro'
 
 const App = () => {
 const [isOpen, setIsOpen] = useState(0)
