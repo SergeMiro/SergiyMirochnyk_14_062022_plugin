@@ -1,38 +1,44 @@
-# P14-plugin-mirochnyk-s
+# ReactModalFzchnyk-s
 
-p14-plugin-mirochnyk-s is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
+ReactModalFzchnyk-s is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
 
 
 # Installation
 
-Install p14-plugin-mirochnyk-s with npm
+Install ReactModalFzchnyk-s with npm
 
 ```javascript
-npm install p14-plugin-mirochnyk-s
+npm install ReactModalFzchnyk-s
 ```
 
 # Example
 
 ```javascript
-import React, { useState } from 'react';
-import { Modal } from 'p14-plugin-mirochnyk-s';
+import React, { useState } from 'react'
+import 'ReactModalFz/dist/index.css'
+import { Modal } from 'ReactModalFz'
 
-export const App = () => {
-  const [modalIsOpen, setModalIsOpen] = useState(true);
+const App = () => {
+const [isOpen, setIsOpen] = useState(0)
 
-  return (
-    <>
-      <h1 style={{ textAlign: 'center' }}>Background</h1>
+return (
       <Modal
-        show={modalIsOpen}
-        setShow={setModalIsOpen}
-        title="Success !"
-        text="The new employee has been created"
-        image={done}
+         isOpen={isOpen}
+         onClose={setIsOpen}
+         title='Modal title'
+         width='600px'
+         modalContent={<p>Modal content</p>}
+         footerContent={
+            <>
+               <button className='btn-modal'>ok</button>
+               <button className='btn-modal'
+                  onClick={() => setIsOpen(isOpen ? 0 : 1)} >
+                  close
+               </button>
+            </>
+         }
       />
-    </>
-  );
-};
+)}
 ```
 
 ## Running Tests
