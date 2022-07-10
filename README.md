@@ -1,22 +1,20 @@
-# p14-plugin-miro
+# ReactModalMz
 
-p14-plugin-miro is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
-
+ReactModalMz is a modal library, is wrritten in Javascript. It is a minimal library without any other dependencies, while being performant and straightforward to use, requiring developers to write fewer lines of code than other form libraries.
 
 # Installation
 
-Install p14-plugin-miro with npm
+Install ReactModalMz with npm
 
 ```javascript
-npm install p14-plugin-miro
+npm install ReactModalMz
 ```
 
 # Example
 
 ```javascript
-import React, { useState } from 'react'
-import 'ReactModalFz/dist/index.css'
-import { Modal } from 'p14-plugin-miro'
+import 'ReactModalMz/dist/index.css'
+import { Modal } from 'ReactModalMz'
 
 const App = () => {
 const [isOpen, setIsOpen] = useState(0)
