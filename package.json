@@ -1,5 +1,5 @@
 {
-  "name": "ReactModalMz",
+  "name": "react-modal-mz",
   "version": "0.1.1",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
